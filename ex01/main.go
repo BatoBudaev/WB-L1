@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// cтруктура Human
 type Human struct {
 	Name   string
 	Age    int
@@ -9,10 +10,12 @@ type Human struct {
 	Weight int
 }
 
+// Функция Say для структуры Human
 func (h Human) Say(phrase string) {
 	fmt.Println(phrase)
 }
 
+// cтруктура Action
 type Action struct {
 	Human
 	Action string
